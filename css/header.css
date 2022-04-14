@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+  padding: 2.5rem 1.25rem;
+}
+.logo {
+  font-size: 1.625rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.header-menu {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+.header-menu a {
+  font-size: 1.125rem;
+  border-bottom: 2px solid transparent;
+}
+.header-menu a:hover {
+  border-color: #52f1ff;
+}
+
+@media (max-width: 1000px) {
+  .header {
+    padding: 2rem 1rem;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .header-menu {
+    gap: 1rem;
+  }
+  .header-menu li {
+    flex: 1;
+    background-color: #fff;
+  }
+  .header-menu a {
+    padding: 0.5rem 2rem;
+    color: #000;
+    display: block;
+    text-align: center;
+  }
+}

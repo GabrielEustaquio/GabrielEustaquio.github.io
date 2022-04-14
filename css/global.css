@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: "Ibm Plex Sans";
+}
+body {
+  background-color: #0e0e0e;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+dt {
+  font-size: 1.5rem;
+}
+dd {
+  font-size: 1.25rem;
+  color: #a1a1a1;
+  margin-left: 3rem;
+  max-width: 100ch;
+  margin-bottom: 3rem;
+}
+main {
+  margin-bottom: 5rem;
+}
+h3,
+p {
+  color: #52f1ff;
+}

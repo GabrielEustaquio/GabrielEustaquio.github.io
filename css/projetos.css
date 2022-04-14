@@ -1,0 +1,22 @@
+.sectionProjetos {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.sectionProjetos h4 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 5rem;
+}
+.sectionProjetos p {
+  text-align: center;
+  padding-bottom: 20rem;
+}
+
+@media (max-width: 600px) {
+  .sectionProjetos h4 {
+    font-size: 2rem;
+    padding-top: 2rem;
+  }
+}

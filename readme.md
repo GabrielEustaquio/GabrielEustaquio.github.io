@@ -7,4 +7,4 @@ Portfólio totalmente responsivo.
 
 ## Imagem do projeto no figma.
 
-<img src="/image/portfolio">
+<img src="/image/portfolio.jpg">

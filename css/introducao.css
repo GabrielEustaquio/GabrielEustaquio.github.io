@@ -22,10 +22,14 @@
   margin-right: auto;
   margin-left: auto;
 }
+.mb {
+  margin-bottom: 2rem;
+}
 .circulo {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  font-size: 1.5rem;
 }
 .circulo::before {
   content: "";
@@ -34,6 +38,26 @@
   height: 10px;
   border-radius: 6px;
   background-color: #52f1ff;
+}
+i {
+  font-size: 2rem;
+  background-color: blue;
+}
+
+.introducao p {
+  display: none;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+  color: #a1a1a1;
+}
+
+[type="checkbox"] {
+  display: none;
+}
+
+[type="checkbox"]:checked + p {
+  display: block;
 }
 
 @media (min-width: 600px) and (max-width: 1000px) {
@@ -57,10 +81,10 @@
   .titulo {
     font-size: 1.5rem;
   }
-  dt {
+  label {
     font-size: 1.125rem;
   }
-  dd {
+  p {
     font-size: 1rem;
   }
   main {

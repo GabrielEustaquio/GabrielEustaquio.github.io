@@ -19,8 +19,6 @@
   display: flex;
   gap: 1.25rem;
   flex-wrap: wrap;
-  position: sticky;
-  top: 0px;
 }
 .header-menu a {
   font-size: 1.125rem;
@@ -54,14 +52,14 @@
   }
 }
 @media (max-width: 600px) {
+  .header {
+    background-color: black;
+  }
   nav {
     display: none;
   }
-  .header-menu {
-    flex-direction: column;
-  }
   #icone-menu:checked + nav {
-    display: block;
+    display: grid;
   }
   .label-menu {
     border-top: 4px solid #52f1ff;

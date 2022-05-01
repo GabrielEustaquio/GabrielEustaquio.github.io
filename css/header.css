@@ -7,6 +7,8 @@
   margin-right: auto;
   flex-wrap: wrap;
   padding: 2.5rem 1.25rem;
+  position: sticky;
+  top: 0px;
 }
 .logo {
   font-size: 1.625rem;
@@ -17,6 +19,8 @@
   display: flex;
   gap: 1.25rem;
   flex-wrap: wrap;
+  position: sticky;
+  top: 0px;
 }
 .header-menu a {
   font-size: 1.125rem;
@@ -24,6 +28,9 @@
 }
 .header-menu a:hover {
   border-color: #52f1ff;
+}
+.label-menu {
+  display: none;
 }
 
 @media (max-width: 1000px) {
@@ -44,5 +51,36 @@
     color: #000;
     display: block;
     text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  nav {
+    display: none;
+  }
+  .header-menu {
+    flex-direction: column;
+  }
+  #icone-menu:checked + nav {
+    display: block;
+  }
+  .label-menu {
+    border-top: 4px solid #52f1ff;
+    display: grid;
+    gap: 3px;
+  }
+  .label-menu::before {
+    content: "";
+    width: 30px;
+    height: 4px;
+    display: block;
+    background-color: #52f1ff;
+    margin-top: 5px;
+  }
+  .label-menu::after {
+    content: "";
+    width: 30px;
+    height: 4px;
+    display: block;
+    background-color: #52f1ff;
   }
 }
